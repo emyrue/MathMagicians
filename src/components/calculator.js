@@ -11,7 +11,7 @@ class Calculator extends React.Component {
   render() {
     return (
       <div className="grid-container">
-        <Answer name="answer" label="0" />
+        <Answer name="answer" previous="" operand="" current="0" />
         <Buttons name="zero" label="0" />
         <Buttons name="one" label="1" />
         <Buttons name="two" label="2" />
