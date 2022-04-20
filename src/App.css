@@ -31,7 +31,37 @@
 #decimal {
   background-color: lightgray;
   border: 1px solid gray;
-  cursor: pointer;
+}
+
+#zero:hover,
+#zero:focus,
+#one:hover,
+#one:focus,
+#two:hover,
+#two:focus,
+#three:hover,
+#three:focus,
+#four:hover,
+#four:focus,
+#five:hover,
+#five:focus,
+#six:hover,
+#six:focus,
+#seven:hover,
+#seven:focus,
+#eight:hover,
+#eight:focus,
+#nine:hover,
+#nine:focus,
+#all-clear:hover,
+#all-clear:focus,
+#positive-negative:hover,
+#positive-negative:focus,
+#percent:hover,
+#percent:focus,
+#decimal:hover,
+#decimal:focus {
+  background-color: rgb(181, 181, 181);
 }
 
 #zero {
@@ -113,6 +143,19 @@
 #equal {
   background-color: orange;
   border: 1px solid gray;
+}
+
+#divide:hover,
+#divide:focus,
+#multiply:hover,
+#multiply:focus,
+#subtract:hover,
+#subtract:focus,
+#add:hover,
+#add:focus,
+#equal:hover,
+#equal:focus {
+  background-color: rgb(255, 136, 0);
 }
 
 #divide {
