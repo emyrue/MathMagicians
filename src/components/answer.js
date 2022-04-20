@@ -2,26 +2,25 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 class Answer extends React.Component {
-  constructor({
-    name,
-    current,
-    previous,
-    operand,
-  }) {
-    super({ name, current, previous });
-    this.name = name;
-    this.previous = previous;
-    this.current = current;
-    this.operand = operand;
+  constructor(props) {
+    super(props);
     this.state = {};
   }
 
   render() {
+    const {
+      name,
+      previous,
+      current,
+      operand,
+    } = this.props;
     return (
-      <div id={this.name}>
-        <span className="previous">{this.previous}</span>
-        <span className="operand">{this.operand}</span>
-        <span className="current">{this.current}</span>
+      <div id={name}>
+        <span className="previous">{previous}</span>
+        {' '}
+        <span className="operand">{operand}</span>
+        {' '}
+        <span className="current">{current}</span>
       </div>
     );
   }
