@@ -2,8 +2,12 @@ import React from 'react';
 import Buttons from './buttons';
 import Answer from './answer';
 
-// eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
       <div className="grid-container">
