@@ -16,16 +16,19 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <nav>
-          <Link to="/"> Home </Link>
-          <span> | </span>
-          <Link to="/calculator"> Calculator </Link>
-          <span> | </span>
-          <Link to="/quote"> Quote </Link>
-        </nav>
+        <header>
+          <h1>Math Magicians</h1>
+          <nav>
+            <Link className="link" to="/"> Home </Link>
+            <span> | </span>
+            <Link className="link" to="/calculator"> Calculator </Link>
+            <span> | </span>
+            <Link className="link" to="/quote"> Quote </Link>
+          </nav>
+        </header>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/calculator" element={<Calculator previous="" operand="" current="0" solved={false} />} />
+          <Route path="/calculator" element={<Calculator previous="" operand="" current="" solved={false} />} />
           <Route path="/quote" element={<Quote />} />
           <Route path="*" element={<div>Page not found</div>} />
         </Routes>

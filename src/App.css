@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 100px);
@@ -17,11 +21,35 @@
   height: 100vh;
 }
 
-nav {
+header {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.home {
+  padding: 0 20px;
+}
+
+.quote {
+  font-size: 30px;
+  width: 75%;
 }
 
 /* Grey buttons */
