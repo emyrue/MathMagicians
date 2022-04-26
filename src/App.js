@@ -3,9 +3,9 @@ import {
   BrowserRouter as Router, Routes, Route, Link,
 } from 'react-router-dom';
 import './App.css';
-import Home from './components/home';
-import Calculator from './components/calculator';
-import Quote from './components/quote';
+import Home from './pages/home';
+import CalcPage from './pages/calcpage';
+import Quote from './pages/quote';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class App extends React.Component {
         </header>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/calculator" element={<Calculator previous="" operand="" current="" solved={false} />} />
+          <Route path="/calculator" element={<CalcPage />} />
           <Route path="/quote" element={<Quote />} />
           <Route path="*" element={<div>Page not found</div>} />
         </Routes>

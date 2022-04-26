@@ -52,6 +52,16 @@ nav {
   width: 75%;
 }
 
+.calcpage {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.calc-heading {
+  font-size: 50px;
+}
+
 /* Grey buttons */
 
 #zero,
