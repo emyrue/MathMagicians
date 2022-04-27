@@ -23,6 +23,11 @@ To get a local copy up and running follow these simple example steps.
  - npm install
  - npm start
 
+## Run tests
+Type this command into the command line:
+- npm test
+Then, press a.
+
 ## Authors
 
 👤 **Author1**
