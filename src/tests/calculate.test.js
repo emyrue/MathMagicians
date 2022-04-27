@@ -1,4 +1,4 @@
-import calculate from "./__mocks__/calculate";
+import calculate from './__mocks__/calculate';
 
 test('AC button', () => {
   const object = {
@@ -11,7 +11,7 @@ test('AC button', () => {
     total: null,
     next: null,
     operation: null,
-  }
+  };
   expect(calculate(object, button)).toStrictEqual(expected);
 });
 
