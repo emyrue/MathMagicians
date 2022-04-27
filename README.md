@@ -12,6 +12,11 @@
 - JavaScript
 - CSS
 
+## Live Demo Links
+
+1. Heroku: https://mathmagicianswebsite.herokuapp.com/quote
+2. Netlify: https://62698423346f4e198a1d010a--lovely-praline-054af9.netlify.app/
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
