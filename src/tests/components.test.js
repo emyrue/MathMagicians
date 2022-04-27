@@ -14,3 +14,12 @@ it('User clicks calculator in navbar', () => {
   fireEvent.click(screen.getByText('Calculator'));
   expect(container.getElementsByClassName('calc-heading')[0]).toHaveTextContent('Let\'s do some math!');
 });
+
+it('User performs math operation on calculator', () => {
+  const { container } = render(<App url="/calculator" />);
+  fireEvent.click(screen.getByText('3'));
+  fireEvent.click(screen.getByText('x'));
+  fireEvent.click(screen.getByText('5'));
+  fireEvent.click(screen.getByText('='));
+  expect(container.getElementsByClassName('previous')[0]).toHaveTextContent('15');
+});
